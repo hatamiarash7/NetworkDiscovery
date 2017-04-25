@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017 - All Rights Reserved - Arash Hatami
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_discover"
+            style="@style/ButtonTop"
+            android:drawableLeft="@drawable/discover"
+            android:drawableStart="@drawable/discover"
+            android:text="@string/btn_discover"
+            android:textColor="@android:color/black"
+            />
+
+        <Button
+            android:id="@+id/btn_options"
+            style="@style/ButtonTop"
+            android:drawableLeft="@drawable/settings"
+            android:drawableStart="@drawable/settings"
+            android:text="@string/btn_options"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/output"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="0dip"/>
+
+        <TextView
+            android:id="@+id/list_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:text="@string/discover_empty"
+            android:textSize="12sp"
+            android:typeface="normal"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/info_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_shadow_start_color"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/info_ip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/info_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_unknown"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/info_mo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            android:typeface="monospace"/>
+    </LinearLayout>
+</LinearLayout>

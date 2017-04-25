@@ -88,3 +88,20 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+.idea/
+/captures
+.classpath
+.project
+/*/out
+/*/*/build
+/*/*/production
+*.iws
+*.ipr
+*~
+*.swp
+obj/
