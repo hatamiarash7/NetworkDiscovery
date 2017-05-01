@@ -32,7 +32,8 @@ import android.widget.Toast;
 public class DbUpdate extends AsyncTask<Void, String, Void> {
 
     private final static String TAG = "DbUpdate";
-    private final static String DB_REMOTE = "http://download.lamatricexiste.info/%s.gz";
+    //private final static String DB_REMOTE = "http://download.lamatricexiste.info/%s.gz";
+    private final static String DB_REMOTE = "http://nd.zimia.ir/%s.gz";
     private final static String REQ = "select count(%1$s) from %2$s";
     private int nb;
     private String file;

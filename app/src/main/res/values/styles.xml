@@ -68,12 +68,11 @@
     <style name="PreferenceScreen">
         <item name="android:windowBackground">@color/White</item>
         <item name="android:textColor">@color/Black</item>
-        <item name="android:textColorSecondary">#555555</item>
         <item name="android:listViewStyle">@style/listViewPrefs</item>
     </style>
 
     <style name="listViewPrefs" parent="@android:style/Widget.ListView">
         <item name="android:background">@color/White</item>
-        <item name="android:cacheColorHint">#555555</item>
+        <item name="android:cacheColorHint">@color/grey</item>
     </style>
 </resources>

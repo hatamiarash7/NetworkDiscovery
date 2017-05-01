@@ -49,7 +49,7 @@ final public class ActivityMain extends Activity {
         
         class DbUpdateProbes extends DbUpdate {
             private DbUpdateProbes() {
-                super(ActivityMain.this, Db.DB_PROBES, "probes", "regex", 298);
+                super(ActivityMain.this, Db.DB_PROBES, "probes", "regex", 518);
             }
             
             protected void onPostExecute(Void unused) {
@@ -67,7 +67,7 @@ final public class ActivityMain extends Activity {
         
         class DbUpdateNic extends DbUpdate {
             private DbUpdateNic() {
-                super(ActivityMain.this, Db.DB_NIC, "oui", "mac", 253);
+                super(ActivityMain.this, Db.DB_NIC, "oui", "mac", 417);
             }
             
             protected void onPostExecute(Void unused) {

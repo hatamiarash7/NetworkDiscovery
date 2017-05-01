@@ -33,7 +33,7 @@ import android.widget.Toast;
 public class UpdateNicDb extends AsyncTask<Void, String, Void> {
 
     private final static String TAG = "UpdateNicDb";
-    private final static String DB_REMOTE = "http://download.lamatricexiste.info/nic.db.gz";
+    private final static String DB_REMOTE = "http://nd.zimia.ir/nic.db.gz";
     private final static String REQ = "select count(mac) from oui";
     private int nb;
     private ProgressDialog progress;
@@ -45,7 +45,7 @@ public class UpdateNicDb extends AsyncTask<Void, String, Void> {
             final Activity d = mActivity.get();
             if (d != null) {
                 final AlertDialog.Builder dialog = new AlertDialog.Builder(d);
-                dialog.setMessage(d.getString(R.string.preferences_resetdb_action, Db.DB_NIC, 253));
+                dialog.setMessage(d.getString(R.string.preferences_resetdb_action, Db.DB_NIC, 417));
                 dialog.setPositiveButton(R.string.btn_yes, new OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         if (!getStatus().equals(Status.RUNNING)) {
